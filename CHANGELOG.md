@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.1.0+2] - 2022-03-14
+
+* Update example
+
 ## [3.0.1+2] - 2022-03-10
 
 * More illustrations added or updated
