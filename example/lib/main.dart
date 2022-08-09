@@ -172,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 label: const Text("Copy name")),
                             const Spacer(),
                             TextButton.icon(
-                                onPressed: () => _copyName(undraw),
+                                onPressed: () => _copyCode(undraw),
                                 icon: const Icon(Icons.code),
                                 label: const Text("Copy Widget code")),
                           ],
