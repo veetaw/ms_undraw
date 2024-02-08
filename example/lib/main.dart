@@ -18,7 +18,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MS Undraw - Demo',
       theme: ThemeData(
-          primarySwatch: Colors.red, secondaryHeaderColor: Colors.orangeAccent),
+        primarySwatch: Colors.red,
+        secondaryHeaderColor: Colors.orangeAccent,
+        useMaterial3: false,
+      ),
       home: ContextMenuOverlay(
         child: MyHomePage(
             title: "${UnDrawIllustration.values.length} Illustrations"),
@@ -96,7 +99,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.color_lens),
         onPressed: () {
           setState(() {
             color = Color((Random().nextDouble() * 0xFFFFFF).toInt() << 0)
@@ -104,6 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
           });
         },
         backgroundColor: Colors.red,
+        child: const Icon(Icons.color_lens),
       ),
       body: Center(
         child: Container(
