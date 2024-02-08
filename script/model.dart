@@ -47,16 +47,16 @@ class Illustration {
 
 class IllustrationElement {
   IllustrationElement({
-    this.id,
-    this.title,
-    this.image,
-    this.slug,
+    required this.id,
+    required this.title,
+    required this.image,
+    required this.slug,
   });
 
-  String? id;
-  String? title;
-  String? image;
-  String? slug;
+  String id;
+  String title;
+  String image;
+  String slug;
 
   IllustrationElement copyWith({
     String? id,
